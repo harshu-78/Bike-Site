@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Blog | VORTEX</title>
+  <link rel="stylesheet" href="blog.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
+
+</head>
+<body>
+
+  <nav>
+    <div class="nav__header">
+      <div class="nav__logo">
+        <a href="#">VORTEX</a>
+      </div>
+      <div class="nav__menu__btn" id="menu-btn">
+        <i class="ri-menu-line"></i>
+      </div>
+    </div>
+    <ul class="nav__links" id="nav-links">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="service.html">SERVICE</a></li>
+      <li><a href="blog.html">BLOG</a></li>
+      <li><a href="support.html">SUPPORT US</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+        <li><button class="btn-login" id="open-auth">LOGIN</button></li>
+    </ul>
+    
+  </nav>
+
+  <header class="blog__hero">
+    <div class="blog__hero__content">
+      <h1>Our Blog</h1>
+      <p>Ride stories, expert tips, and latest updates — everything a biker loves!</p>
+    </div>
+  </header>
+
+  <section class="blog__posts section__container">
+    <div class="blog__grid">
+      <!-- ✅ BLOG CARD -->
+      <div class="blog__card">
+        <img src="assets/blog-1.jpg" alt="Blog Post 1">
+        <div class="blog__card__content">
+          <h3>5 Essential Bike Maintenance Tips</h3>
+          <p>Keep your bike roaring with these simple but crucial maintenance steps every rider must know.</p>
+          <a href="#">Read More <i class="ri-arrow-right-line"></i></a>
+        </div>
+      </div>
+
+      <div class="blog__card">
+        <img src="assets/blog-2.jpeg" alt="Blog Post 2">
+        <div class="blog__card__content">
+          <h3>New 2025 VORTEX X1 Launched</h3>
+          <p>Discover what makes the all-new X1 a game changer for urban riders looking for power & style.</p>
+          <a href="#">Read More <i class="ri-arrow-right-line"></i></a>
+        </div>
+      </div>
+
+      <div class="blog__card">
+        <img src="assets/blog-3.jpeg" alt="Blog Post 3">
+        <div class="blog__card__content">
+          <h3>Top 7 Routes for Adventure Bikers</h3>
+          <p>Explore the most breathtaking routes across India that every adventure rider must experience.</p>
+          <a href="#">Read More <i class="ri-arrow-right-line"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="section__container">
+      <p>© 2025 VORTEX Bikes. All rights reserved.</p>
+    </div>
+  </section>
+
+
+  <div class="auth-modal" id="auth-modal">
+  <div class="auth-modal__content">
+    <span class="auth-modal__close" id="close-auth">&times;</span>
+
+    <!-- LOGIN FORM -->
+    <div class="auth-form" id="login-form">
+      <h2>Login to VORTEX</h2>
+      <form>
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" required />
+        <button type="submit" class="btn-primary">Login</button>
+      </form>
+      <p class="auth-switch">Don't have an account? <a href="#" id="show-signup">Sign up</a></p>
+    </div>
+
+    <!-- SIGNUP FORM -->
+    <div class="auth-form hidden" id="signup-form">
+      <h2>Create Account</h2>
+      <form>
+        <input type="text" placeholder="Full Name" required />
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" required />
+        <button type="submit" class="btn-primary">Sign Up</button>
+      </form>
+      <p class="auth-switch">Already have an account? <a href="#" id="show-login">Login</a></p>
+    </div>
+  </div>
+</div>
+
+
+<script src="main.js"></script>
+ 
+
+</body>
+</html>

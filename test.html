@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cookie Consent FINAL</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .cookie-modal {
+      position: fixed;
+      inset: 0; /* shorthand for top:0; right:0; bottom:0; left:0 */
+      background: rgba(0, 0, 0, 0.8);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+    }
+
+    .cookie-modal.hide {
+      display: none;
+    }
+
+    .cookie-content {
+      max-width: 500px;
+      background: #fff;
+      color: #111;
+      padding: 2rem;
+      border-radius: 12px;
+      text-align: left;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    }
+
+    .cookie-content p {
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    .cookie-content button {
+      margin-top: 1rem;
+      background: #FF9F1C;
+      color: #fff;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 30px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>My Website Content</h1>
+  <p>This is a test page to check the cookie consent popup.</p>
+
+  <div class="cookie-modal" id="cookiePopup">
+    <div class="cookie-content">
+      <p>
+        We use cookies to personalize content and ads, to provide social media features and to analyse our traffic.
+        If you continue to use this site we will assume that you are happy with it.
+      </p>
+      <button id="acceptBtn">Accept</button>
+    </div>
+  </div>
+
+  <script>
+    const popup = document.getElementById("cookiePopup");
+    const acceptBtn = document.getElementById("acceptBtn");
+
+    // Show only if not accepted yet
+    if (localStorage.getItem("cookieAccepted") !== "true") {
+      popup.classList.remove("hide");
+      document.body.style.overflow = "hidden";
+    } else {
+      popup.classList.add("hide");
+    }
+
+    acceptBtn.addEventListener("click", () => {
+      localStorage.setItem("cookieAccepted", "true");
+      popup.classList.add("hide");
+      document.body.style.overflow = "auto";
+    });
+  </script>
+
+</body>
+</html>

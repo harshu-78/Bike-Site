@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Services | VORTEX</title>
+  <link rel="stylesheet" href="service.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+</head>
+<body>
+
+
+  <nav>
+    <div class="nav__header">
+      <div class="nav__logo">
+        <a href="#">VORTEX</a>
+      </div>
+      <div class="nav__menu__btn" id="menu-btn">
+        <i class="ri-menu-line"></i>
+      </div>
+    </div>
+    <ul class="nav__links" id="nav-links">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="service.html">SERVICE</a></li>
+      <li><a href="blog.html">BLOG</a></li>
+      <li><a href="support.html">SUPPORT US</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+        <li><button class="btn-login" id="open-auth">LOGIN</button></li>
+    </ul>
+    
+  </nav>
+
+
+  <header class="service__hero">
+    <div class="service__hero__content">
+      <h1>OUR SERVICES</h1>
+      <p>Premium services to keep your machine roaring on the roads.</p>
+    </div>
+  </header>
+
+  <section class="services">
+    <div class="section__container">
+      <h2 class="heading">What We Offer</h2>
+      <div class="services__grid">
+
+        <div class="service__card">
+          <img src="assets/service-maintenance.jpeg" alt="Maintenance" />
+          <h3>Regular Maintenance</h3>
+          <p>Keep your bike in top condition with routine check-ups & tune-ups by certified experts.</p>
+        </div>
+
+        <div class="service__card">
+          <img src="assets/service-custom.jpeg" alt="Custom Modifications" />
+          <h3>Custom Modifications</h3>
+          <p>Personalize your ride with custom parts, paint jobs, and unique modifications.</p>
+        </div>
+
+        <div class="service__card">
+          <img src="assets/service-tuning.jpeg" alt="Performance Tuning" />
+          <h3>Performance Tuning</h3>
+          <p>Unleash maximum power with engine tuning, exhaust upgrades, and performance kits.</p>
+        </div>
+
+        <div class="service__card">
+          <img src="assets/service-parts.jpeg" alt="Parts Replacement" />
+          <h3>Parts Replacement</h3>
+          <p>Only genuine, high-quality parts to ensure safety, reliability, and top performance.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="why__choose">
+    <div class="section__container">
+      <h2 class="heading">Why Choose Us?</h2>
+      <div class="why__grid">
+        <div class="why__card">
+          <img src="assets/verified.png" alt="Certified" />
+          <h4>Certified Mechanics</h4>
+          <p>Experienced professionals with passion for bikes.</p>
+        </div>
+        <div class="why__card">
+          <img src="assets/genuine.png" alt="Genuine Parts" />
+          <h4>Genuine Parts</h4>
+          <p>Quality you can trust for every mile you ride.</p>
+        </div>
+        <div class="why__card">
+          <img src="assets/quick-response.png" alt="Quick Service" />
+          <h4>Quick Service</h4>
+          <p>Fast turnaround without compromising quality.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="service__cta__split">
+  <div class="service__cta__left">
+    <h2>Keep Your Machine <span>Ready</span></h2>
+    <p>Top-notch servicing with genuine parts & certified experts. Book your premium service now.</p>
+    <a href="contact.html" class="btn">Book Service <i class="ri-arrow-right-line"></i></a>
+  </div>
+  <div class="service__cta__right">
+    <img src="assets/bike-cta.png" alt="Premium Bike">
+  </div>
+</section>
+
+ <footer>
+    <div class="section__container">
+      <p>© 2025 VORTEX Bikes. All rights reserved.</p>
+    </div>
+  </footer>
+
+<div class="auth-modal" id="auth-modal">
+  <div class="auth-modal__content">
+    <span class="auth-modal__close" id="close-auth">&times;</span>
+
+    <!-- LOGIN FORM -->
+    <div class="auth-form" id="login-form">
+      <h2>Login to VORTEX</h2>
+      <form>
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" required />
+        <button type="submit" class="btn-primary">Login</button>
+      </form>
+      <p class="auth-switch">Don't have an account? <a href="#" id="show-signup">Sign up</a></p>
+    </div>
+
+    <!-- SIGNUP FORM -->
+    <div class="auth-form hidden" id="signup-form">
+      <h2>Create Account</h2>
+      <form>
+        <input type="text" placeholder="Full Name" required />
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" required />
+        <button type="submit" class="btn-primary">Sign Up</button>
+      </form>
+      <p class="auth-switch">Already have an account? <a href="#" id="show-login">Login</a></p>
+    </div>
+  </div>
+</div>
+
+
+<script src="main.js"></script>
+
+</body>
+</html>

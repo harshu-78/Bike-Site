@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | VORTEX</title>
+  <link rel="stylesheet" href="contact.css" />
+ <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
+
+</head>
+<body>
+  <nav>
+    <div class="nav__header">
+      <div class="nav__logo">
+        <a href="#">VORTEX</a>
+      </div>
+      <div class="nav__menu__btn" id="menu-btn">
+        <i class="ri-menu-line"></i>
+      </div>
+    </div>
+    <ul class="nav__links" id="nav-links">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="service.html">SERVICE</a></li>
+      <li><a href="blog.html">BLOG</a></li>
+       <li><a href="support.html">SUPPORT US</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+        <li><button class="btn-login" id="open-auth">LOGIN</button></li>
+    </ul>
+    
+  </nav>
+
+  <header class="contact__hero">
+    <div class="contact__hero__content">
+      <h1>Contact Us</h1>
+      <p>Have questions? Need help? Or just want to say hi? We're here for you.</p>
+    </div>
+  </header>
+
+  <section class="contact__form__section">
+    <div class="section__container">
+      <div class="contact__form__wrapper">
+        <form action="#" method="POST" class="contact__form">
+          <h2>Send Us a Message</h2>
+          <div class="form__group">
+            <input type="text" placeholder="Your Name" required />
+          </div>
+          <div class="form__group">
+            <input type="email" placeholder="Your Email" required />
+          </div>
+          <div class="form__group">
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+        <div class="contact__details">
+          <h2>Get in Touch</h2>
+          <p><i class="ri-map-pin-line"></i> 123 Bike Street, Speed City</p>
+          <p><i class="ri-phone-line"></i> +91 98765 43210</p>
+          <p><i class="ri-mail-line"></i> support@vortexbikes.com</p>
+          <!-- Optional: Embed a Google Map -->
+          <div class="map__wrapper">
+            <iframe 
+              src="https://www.google.com/maps/embed?..." 
+              width="100%" 
+              height="250" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="founder__card">
+  <div class="founder__card__container">
+    <div class="founder__card__left">
+      <img src="assets/founder.jpg" alt="Arjun Singh" class="founder__card__image">
+      <h3>Harsh Pratap Singh</h3>
+      <p>Founder, VORTEX</p>
+    </div>
+    <div class="founder__card__right">
+      <div class="founder__card__socials">
+        <a href="#"><i class="ri-instagram-line"></i></a>
+        <a href="https://www.linkedin.com/in/harshpratapsinghh/"><i class="ri-linkedin-fill"></i></a>
+        <a href="#"><i class="ri-mail-line"></i></a>
+      </div>
+    </div>
+  </div>
+  <p class="founder__quote">“Building dreams, one ride at a time.”</p>
+</section>
+
+
+
+
+
+  <footer>
+    <div class="section__container">
+      <p>© 2025 VORTEX Bikes. All rights reserved.</p>
+    </div>
+  </footer>
+
+<div class="auth-modal" id="auth-modal">
+  <div class="auth-modal__content">
+    <span class="auth-modal__close" id="close-auth">&times;</span>
+
+    <!-- LOGIN FORM -->
+    <div class="auth-form" id="login-form">
+      <h2>Login to VORTEX</h2>
+      <form>
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" required />
+        <button type="submit" class="btn-primary">Login</button>
+      </form>
+      <p class="auth-switch">Don't have an account? <a href="#" id="show-signup">Sign up</a></p>
+    </div>
+
+    <!-- SIGNUP FORM -->
+    <div class="auth-form hidden" id="signup-form">
+      <h2>Create Account</h2>
+      <form>
+        <input type="text" placeholder="Full Name" required />
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" required />
+        <button type="submit" class="btn-primary">Sign Up</button>
+      </form>
+      <p class="auth-switch">Already have an account? <a href="#" id="show-login">Login</a></p>
+    </div>
+  </div>
+</div>
+
+
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css"></script>
+  <script src="main.js"></script>
+</body>
+</html>

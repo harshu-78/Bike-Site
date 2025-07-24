@@ -1,0 +1,457 @@
+body {
+  margin: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  background: #111;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  z-index: 9999;
+  backdrop-filter: blur(12px);
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 5%;
+}
+
+.nav__logo a {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #f08800;
+  line-height: 1.5rem;
+}
+
+
+
+.nav__menu__btn {
+  font-size: 2rem;
+  color: #ffffff;
+  cursor: pointer;
+  display: none;
+  font-size: 1.5rem;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+
+.nav__links {
+  bottom: 0;
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  left: 0;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;  /* 👈 Yahi galat tha */
+  transition: transform 0.5s;
+  z-index: -1;
+  gap: 0.1rem;
+  padding: 2rem;
+  margin-right: 200px;
+  list-style: none;
+}
+
+.nav__links.open {
+  transform: translateY(100%);
+}
+
+.nav__links a {
+  font-size: 1rem;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.nav__links a:hover {
+  color: #ff9306;
+}
+
+
+
+
+
+.contact__hero {
+  background: url('assets/contact-hero.jpeg') center/cover no-repeat;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+}
+
+.contact__hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.contact__hero__content {
+  position: relative;
+  z-index: 2;
+}
+
+.contact__hero__content h1 {
+  font-size: 4rem;
+  margin: 0;
+  color: #FF9F1C;
+}
+
+.contact__hero__content p {
+  max-width: 600px;
+  margin: 1rem auto 0;
+  font-size: 1.2rem;
+}
+
+.section__container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 6rem 1rem;
+}
+
+.contact__form__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.contact__form {
+  flex: 1 1 50%;
+  background: #1a1a1a;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.contact__form h2 {
+  margin-bottom: 1.5rem;
+  color: #FF9F1C;
+}
+
+.form__group {
+  margin-bottom: 1.5rem;
+}
+
+.contact__form input,
+.contact__form textarea {
+  width: 100%;
+  padding: 1rem;
+  background: #111;
+  border: none;
+  border-radius: 0.5rem;
+  color: #fff;
+}
+
+.contact__form input::placeholder,
+.contact__form textarea::placeholder {
+  color: #aaa;
+}
+
+.contact__form .btn {
+  background: #FF9F1C;
+  color: #111;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  cursor: pointer;
+  border: none;
+}
+
+.contact__details {
+  flex: 1 1 40%;
+}
+
+.contact__details h2 {
+  margin-bottom: 1rem;
+  color: #FF9F1C;
+}
+
+.contact__details p {
+  margin-bottom: 1rem;
+}
+
+.map__wrapper {
+  border-radius: 1rem;
+  overflow: hidden;
+  margin-top: 2rem;
+}
+
+.founder__card {
+  background: #1a1a1a;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(255, 159, 28, 0.1);
+  padding: 2rem 3rem;
+  max-width: 700px;
+  margin: 4rem auto;
+  text-align: center;
+}
+
+.founder__card__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.founder__card__left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.founder__card__image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #FF9F1C;
+}
+
+.founder__card__left h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.founder__card__left p {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #aaa;
+}
+
+.founder__card__right .founder__card__socials {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.founder__card__socials a {
+  font-size: 1.6rem;
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+.founder__card__socials a:hover {
+  color: #FF9F1C;
+}
+
+.founder__quote {
+  margin-top: 1.5rem;
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #bbb;
+}
+
+
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+
+
+
+@media (max-width: 768px) {
+
+  nav {
+    flex-direction: row;
+    height: auto;
+    padding: 1rem 2rem;
+    flex-wrap: wrap;
+    background-color: #080808;
+  }
+
+  .nav__menu__btn {
+    display: block;
+    margin-left: 285px;
+    margin-top: -30px !important;
+  }
+  .nav__logo a {
+    line-height: 2.5rem;
+  }
+
+  .nav__links {
+   position: absolute;
+    bottom: 32px;
+    left: -87px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    background-color: black;
+    transition: transform 0.5s;
+    z-index: -1;
+  }
+
+  .nav__links.open {
+   transform: translateY(95%);
+  }
+
+  .nav__links li {
+    margin: 1rem 0;
+  }
+   .contact__form__wrapper {
+    flex-direction: column;
+  }
+
+.contact__form input, .contact__form textarea {
+    width: 92%;
+}
+  .contact__form,
+  .contact__details {
+    flex: 1 1 100%;
+  }
+
+  /* ✅ Founder Card Section */
+  .founder__card__container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .founder__card__left {
+    flex-direction: column;
+  }
+}
+
+
+
+.btn-login {
+  background: #FF9F1C;
+  border: none;
+  padding: 0.4rem 1rem;
+  border-radius: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #111;
+  transition: 0.3s ease;
+}
+
+.btn-login:hover {
+  background: #fff;
+  color: #111;
+}
+
+
+.auth-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s ease;
+  z-index: 99999;
+}
+
+.auth-modal.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.auth-modal__content {
+  background: rgba(17,17,17,0.95);
+  padding: 3rem 2rem;
+  border-radius: 1rem;
+  position: relative;
+  max-width: 330px;
+  width: 90%;
+  text-align: center;
+  animation: fadeUp 0.4s ease forwards;
+}
+
+.auth-modal__close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.auth-form h2 {
+  margin-bottom: 1.5rem;
+  color: #FF9F1C;
+}
+
+.auth-form form input {
+  width: 90%;
+  margin-bottom: 1rem;
+  padding: 0.8rem 1rem;
+  border: none;
+  border-radius: 50px;
+  background: #222;
+  color: #fff;
+}
+
+.auth-form form input::placeholder {
+  color: #aaa;
+}
+
+.auth-form .btn-primary {
+  background: #FF9F1C;
+  color: #111;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.auth-form .btn-primary:hover {
+  background: #fff;
+  color: #111;
+}
+
+.auth-switch {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #fff; /* ✅ yahi important hai */
+}
+
+.auth-switch a {
+  color: #FF9F1C;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
+
+.auth-form.hidden {
+  display: none;
+}
+
+@keyframes fadeUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+

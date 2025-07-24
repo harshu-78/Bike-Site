@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Support Us | VORTEX</title>
+  <link rel="stylesheet" href="support.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+
+  <nav>
+    <div class="nav__header">
+      <div class="nav__logo">
+        <a href="#">VORTEX</a>
+      </div>
+      <div class="nav__menu__btn" id="menu-btn">
+        <i class="ri-menu-line"></i>
+      </div>
+    </div>
+    <ul class="nav__links" id="nav-links">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="service.html">SERVICE</a></li>
+      <li><a href="blog.html">BLOG</a></li>
+      <li><a href="support.html">SUPPORT US</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+     <li><button class="btn-login" id="open-auth">LOGIN</button></li>
+    </ul>
+    
+  </nav>
+
+
+  <!-- ==== HERO ==== -->
+  <header class="support__hero">
+    <div class="hero__content">
+      <h1>Join The Ride. Fuel The Dream.</h1>
+      
+    </div>
+  </header>
+
+  <!-- ==== TICKER ==== -->
+  <div class="ticker">
+    <p>Be Part Of The Journey ⚡    Join The Crew ⚡     Fuel The Ride ⚡       Make An Impact ⚡</p>
+  </div>
+
+  <!-- ==== WAYS TO SUPPORT ==== -->
+  <section class="support__ways">
+    <div class="container">
+      <h2 class="section__title">Ways To Support</h2>
+      <div class="ways__grid">
+        <div class="way__card">
+          <div class="icon">💸</div>
+          <h3>Donate</h3>
+          <p>Help us keep the engines roaring with your generous support.</p>
+        </div>
+        <div class="way__card">
+          <div class="icon">🤝</div>
+          <h3>Partner</h3>
+          <p>Collaborate & sponsor our events to reach a bigger audience.</p>
+        </div>
+        <div class="way__card">
+          <div class="icon">🏍️</div>
+          <h3>Volunteer</h3>
+          <p>Join our crew to manage rides & make every event memorable.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==== FINAL CTA ==== -->
+  <section class="support__cta">
+  <div class="support__cta__content">
+    <h2>Ready To Ride With VORTEX?</h2>
+    <p>Your contribution keeps our engines roaring & dreams alive.</p>
+    <a href="contact.html" class="btn">Join Us Now</a>
+  </div>
+  <div class="support__cta__image">
+    <img src="assets/support-bike.jpeg" alt="Bike Image">
+  </div>
+</section>
+
+  <footer>
+    <p>© 2025 VORTEX Bikes. All rights reserved.</p>
+  </footer>
+
+<div class="auth-modal" id="auth-modal">
+  <div class="auth-modal__content">
+    <span class="auth-modal__close" id="close-auth">&times;</span>
+
+    <!-- LOGIN FORM -->
+    <div class="auth-form" id="login-form">
+      <h2>Login to VORTEX</h2>
+      <form>
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" required />
+        <button type="submit" class="btn-primary">Login</button>
+      </form>
+      <p class="auth-switch">Don't have an account? <a href="#" id="show-signup">Sign up</a></p>
+    </div>
+
+    <!-- SIGNUP FORM -->
+    <div class="auth-form hidden" id="signup-form">
+      <h2>Create Account</h2>
+      <form>
+        <input type="text" placeholder="Full Name" required />
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" required />
+        <button type="submit" class="btn-primary">Sign Up</button>
+      </form>
+      <p class="auth-switch">Already have an account? <a href="#" id="show-login">Login</a></p>
+    </div>
+  </div>
+</div>
+
+
+
+  <script src="main.js"></script>
+
+</body>
+</html>
